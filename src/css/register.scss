@@ -1,0 +1,113 @@
+@import "./modules/reset";
+.register {
+  width: 100%;
+  min-height: 600px;
+  background: rgba(102, 102, 102, 0.219);
+  &-center {
+    max-width: 1120px;
+    height: 600px;
+    margin: 0 auto;
+
+    overflow: hidden;
+    &-content {
+      width: 400px;
+      height: 500px;
+      background: #fff;
+      margin: 50px auto;
+      border-radius: 12px;
+      &-top {
+        height: 150px;
+        h4{
+          text-align: center;
+        
+        }
+        & p:nth-of-type(1) {
+          text-align: center;
+          line-height: 100px;
+          i {
+            font-size: 60px !important;
+            color: rgba(190, 84, 84, 0.904);
+          }
+        }
+        & p:nth-of-type(2) {
+          font: 18px;
+
+          text-align: center;
+        }
+      }
+      &-zhong {
+        height: 300px;
+        margin: 0 auto;
+        position: relative;
+        & p:nth-of-type(4) {
+          // background: red;
+          input {
+            width: 100px;
+            height: 30px;
+            margin: 0 5px;
+          }
+        }
+        & p:nth-of-type(5) {
+          border: 0;
+          width: 300px;
+          height: 52px;
+          input {
+            width: 300px;
+            height: 50px;
+            border-radius: 12px;
+            background: blue;
+            font-size: 24px;
+            border: none;
+          }
+        }
+        p {
+          box-sizing: border-box;
+          width: 300px;
+          height: 55px;
+          margin: 5px auto;
+          border: 1px solid #666;
+          border-radius: 10px;
+          span {
+            width: 80px;
+            height: 55px;
+            font-size: 16px;
+            line-height: 55px;
+            margin-right: 20px;
+          }
+
+          input {
+            width: 200px;
+            height: 30px;
+            border: none;
+            outline: none;
+           
+          }
+
+          em {
+            line-height: 55px;
+            position: fixed;
+            left: 62%;
+            font-size: 12px;
+            color: blue;
+          }
+        }
+      }
+      &-bottom {
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+
+.bg{
+    background:url(/images/yes.png) no-repeat;    // 当验证正确时显示图片
+    margin-left: 5px;
+}
+.bgg{
+    background:url(/images/no.png) no-repeat;      // 当验证错误时显示图片
+    margin-right: 5px;
+}

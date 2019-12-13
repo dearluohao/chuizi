@@ -1,0 +1,81 @@
+@import './modules/reset';
+@import './modules/header';
+@import './modules/footer';
+
+main{
+    width: 100%;
+    min-height:435px;
+    background: #ededed;
+    .main{
+        max-width: 1220px;
+        min-height:435px;
+        margin: 0 auto;
+        &-filtrate{
+            height: 60px;
+        ul{
+            height: 60px;
+            font-size: 12px;
+            display: flex;
+           
+            line-height: 60px;
+            li:nth-of-type(1){padding-left: 0;}
+            li{
+               padding: 0 12px;
+               a{color: #6b6b6b;}
+            }
+        }
+            
+        }
+        &-content{
+            height: 430px;
+            border: 1px solid #f5f5f5;
+            display: flex;
+              justify-content: space-between;
+              align-items: center;
+            &-shop {
+                width: 304px;
+                height: 430px;
+                border-right: 1px solid #f5f5f5;
+                &-top {
+                  padding: 43px 0 22px;
+                  & img {
+                    display: inline-block;
+                    height: 216px;
+                    width: 304px;
+                    background: orchid;
+                  }
+                }
+                &-buttom {
+                  width: 304px;
+                  height: 142px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-around;
+                  align-items: center;
+                  & h3 {
+                    font-size: 18px;
+                    font-weight: bold;
+                  }
+                  & p {
+                    font-size: 12px;
+                    font-weight: bold;
+                  }
+                  & div {
+                    span {
+                      display: inline-block;
+                      width: 8px;
+                      height: 8px;
+                      margin-right: 1px;
+                      border-radius: 50%;
+                      background-color: #222222;
+                      border: 2px solid #b1b1b1;
+                      &:hover {
+                        border: 2px solid black;
+                      }
+                    }
+                  }
+                }
+              }
+        }
+    }
+}

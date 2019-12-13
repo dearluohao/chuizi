@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>购物车</title>
+    <link rel="stylesheet" href="/css/shopping.css" />
+    <link rel="stylesheet" href="/css/modules/reset.css" />
+    <link rel="stylesheet" href="/libs/iconfont/iconfont.css" />
+  </head>
+  <body>
+    <!-- <!-- 头部 -->
+    <header></header>
+    <!-- 内容 -->
+    <main>
+      <div class="shopping">
+        <h3>购物清单</h3>
+        <div class="shopping-message ">
+          <ul>
+            <li>商品信息</li>
+          </ul>
+          <ul>
+            <li>单价</li>
+            <li>数量</li>
+            <li>小计</li>
+            <li>操作</li>
+          </ul>
+        </div>
+        <!-- 外层大盒子 -->
+        <div class="shopping-operation">
+
+<div id="shop_cont">
+
+</div>
+
+<script type="text/html" id="srcShop">
+  {{each cart shop}}
+
+<div class="shopping-operation-quantity" id="shopping_quantity"  data_id="{{shop.id}}">
+    <div class="shopping-operation-quantity-left">
+      <span><input type="checkbox" {{shop.check ? 'checked' : ''}}/></span>
+      <img src="{{shop.img[0]}}" alt="" />
+      <ul>
+        <li>{{shop.title}}</li>
+        <li>黑色8G + 128GB</li>
+      </ul>
+    </div>
+    <div class="shopping-operation-quantity-right">
+      <ul>
+        <li class="danjia">{{shop.jiage}}</li>
+        <li>
+
+          
+          <span><button type="button" class="sub_btn">-</button></span>
+          <em><input type="text" value="{{shop.count}}"  class="put"></em>
+           <span><button type="button" class="add_btn">+</button></span>
+        </li>
+        <li class='xiaoji'>{{(shop.jiage*shop.count).toFixed(2)}}</li>
+        <li>
+          <button class='delete'>×</button>
+        </li>
+      </ul>
+    </div> 
+  </div>  
+{{/each}}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="shopCose">
+
+
+</div>
+
+<script type="text/html" id="shop_cose">
+          <div class="shopping-operation-quantity" id="cart-empty">
+            <p>亲,你的购物车没有商品哟,点击去商品详情页把,么么哒~~</p>
+            <p class="shopping-operation-quantity-button"><a href=/html/category.html>亲,赶快点我吧</a></p>
+          </div>
+          <div class="shopping-submit">
+            <ul class="shopping-submit-left">
+                <span><input type="checkbox" id="all-check" ></span>
+                <li>全选</li>
+                <li>删除选中的商品</li>
+            </ul>
+            <ul class="shopping-submit-right">
+                <li>已选择一件商品</li>
+                <li class="sumMoney"></li><span>元</span>
+                <li><a href="#">现在结算</a></li>
+            </ul>
+          </div>
+
+ </script>
+
+        </div>
+    </main>
+
+    <!-- 尾部 -->
+    <footer></footer>
+
+    <script
+      src="/libs/require/require.min.js"
+      data-main="/js/shopping"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "小姐姐1",
+    "peizhi":"温柔",
+    "src": "/images/1.jpg",
+   "price":"$998"
+  },
+  {
+    "id": 2,
+    "title": "小姐姐2",
+    "peizhi":"善良",
+    "src": "/images/2.jpg",
+   "price":"$3333"
+  },
+  {
+    "id": 3,
+    "title": "小姐姐3",
+    "peizhi":"可爱",
+    "src": "/images/3.jpg",
+   "price":"$5555"
+  },
+  {
+    "id": 4,
+    "title": "小姐姐4",
+    "peizhi":"暖心",
+    "src": "/images/4.jpg",
+   "price":"$6666"
+  }
+]

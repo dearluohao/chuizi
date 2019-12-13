@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/modules/reset.css" />
+    <link rel="stylesheet" href="/libs/iconfont/iconfont.css" />
+    <link rel="stylesheet" href="/libs/swiper/css/swiper.min.css">
+
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header></header>
+    
+
+  
+    <!-- 主要内容 -->
+    <div class="main">
+      <main>
+        <!-- 轮播图内容 -->
+        <div class="slideshow">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- <div class="slideshow-top" id="slideshow-top">
+              <script type="text/html" id="getImagesShow">
+                {{each list images}}
+              <img src="{{images.src}}" alt="">
+              {{/each}}
+            </script>
+            
+          </div> -->
+
+
+<div class="swiper-container slideshow-top"  >
+ <div class="swiper-wrapper" id="slideshow-top">
+
+      
+        <div class="swiper-slide"><img src="./images/1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/6.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/7.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/8.jpg" alt=""></div>
+        
+
+  
+
+      
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="slideshow-bottom"></div>
+        </div>
+        <!-- 热卖商品 -->
+        <div class="hotgoods">
+          <div class="hotgoods-top">
+            <h3>热卖商品</h3>
+            <div>
+              <span><a href="#">&lt;</a></span>
+              <span><a href="#">&gt;</a></span>
+            </div>
+          </div>
+          <!-- 热卖商品详情内容 -->
+          <div class="hotgoods-bottom" id="hotgoods-bottom">
+        
+             <script type="text/html" id="hotgoods-shop">
+            {{each list shop}}
+            <div class="hotgoods-bottom-shop">
+              <div class="hotgoods-bottom-shop-top"><img src="{{shop.src}}" alt="" /></div>
+              <div class="hotgoods-bottom-shop-buttom">
+                <h3>{{shop.brand}}</h3>
+                <p>{{shop.title}}</p>
+                <div>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <em>{{shop.desc}}</em>
+              </div>
+            </div>
+            {{/each}}
+            </script>
+          </div>
+        </div>
+        <!-- 商品详情 -->
+        <div class="shop-details">
+          <div class="shop-details-content">
+            <!-- 标题头部 -->
+            <div class="shop-details-content-top">坚果pro3及配件</div>
+            <!-- 上面内容 -->
+            <div class="shop-details-content-canter">
+              <!-- 上左 -->
+              <div class="shop-details-content-canter-left"></div>
+              <!-- 上中 -->
+              <div class="shop-details-content-canter-center">
+                <div class="shop-details-content-canter-center-shop">
+                  <div class="shop-details-content-canter-center-shop-top">
+                    <img src="#" alt="" />
+                  </div>
+                  <div class="shop-details-content-canter-center-shop-buttom">
+                    <h3>坚果pro3</h3>
+                    <p>高通小龙855puls 4800万像素</p>
+                    <div>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <em>$2899.00</em>
+                  </div>
+                </div>
+              </div>
+              <!-- 上右 -->
+              <div class="shop-details-content-canter-right">
+                <div class="shop-details-content-canter-right-shop">
+                  <div class="shop-details-content-canter-right-shop-top">
+                    <img src="#" alt="" />
+                  </div>
+                  <div class="shop-details-content-canter-right-shop-buttom">
+                    <h3>坚果pro3</h3>
+                    <p>高通小龙855puls 4800万像素</p>
+                    <div>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <em>$2899.00</em>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 下面四张内容 -->
+            <div class="shop-details-content-bottom" id="shop-details-content">
+              
+            </div>
+            <script type="text/html" id="cateGoryTemplate">
+              {{each list item,index}}
+              <div class="shop-details-content-bottom-shop">
+                  <div class="shop-details-content-bottom-shop-top">
+                    <img src="{{item.src}}" alt="" />
+                  </div>
+                  <div class="shop-details-content-bottom-shop-buttom">
+                    <h3>{{item.title}}</h3>
+                    <p>{{item.peizhi}}</p>
+                    <div>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <em>{{item.price}}</em>
+                  </div>
+                </div>
+                {{/each}}
+            </script>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- 尾部 -->
+    <footer>
+     
+    </footer>
+  <script src="/libs/require/require.min.js" data-main="/js/index"></script>
+  </body>
+</html>

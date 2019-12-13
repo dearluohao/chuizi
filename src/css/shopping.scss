@@ -1,0 +1,186 @@
+@import './modules/reset';
+@import './modules/header';
+@import './modules/footer';
+.nav{
+    display: none;
+}
+#cart-empty{
+    display: none;
+}
+
+//封装复用变量
+@mixin display_f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+
+main{
+    
+    width: 100%;
+   min-height:300px;
+   background: #aa99992f;
+ 
+
+   .shopping{
+    
+       width: 1220px;
+       min-height: 300px;
+       margin: 0 auto;
+       border:1px solid #ccc;
+       border-radius: 15px;
+       margin-top: 20px;
+       background: #fff;
+       h3{
+           padding-left: 20px;
+      
+           height: 60px;
+           font-size:26px;
+           line-height: 60px;
+      
+       }
+ 
+    &-message{
+        background: #ccc;
+    
+       height: 30px;
+       @include display_f;
+       padding: 0 20px;
+       font-size: 14px;
+       & ul:nth-of-type(2){
+        
+        display: flex;
+        li{
+            margin:0 53px;
+        }
+     }
+    }
+    &-operation{
+      
+        min-height: 200px;
+    
+        &-quantity{
+        height: 100px;
+        margin-top: 20px;
+        padding: 0 20px;
+        @include display_f;
+        
+            &-button{
+                width: 120px;
+                height: 50px;
+                background:pink;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 50px;
+                margin-left: 15%;
+                margin-top: 10px;
+                a{color: #fff;}
+            }
+       
+        
+        &-left{
+            
+            @include display_f;
+            span{
+              
+               
+               
+             
+                border-radius: 50%;
+            
+                &:hover {
+                    background: rgb(235, 181, 6);
+                }
+               input{
+                   border: none;
+               }
+            }
+            img{
+                margin: 0 40px;
+                width: 100px;
+                height: 100px;
+            }
+            
+        }
+        &-right{
+            padding: 0 20px;
+           
+           ul{
+               font-size: 14px;
+            @include display_f;
+            li{
+                margin:0 40px;
+                button{
+                  
+                    width: 20px;
+                    height: 20px;
+               }
+                    
+             em{
+                 input{
+                   
+                     width: 20px;
+                     text-align: center;
+                 }
+             }
+            }
+           }
+           
+        }
+
+        
+        }
+    }
+
+
+
+    &-submit{
+        margin-top: 20px;
+        height: 100px;
+        background: rgb(235, 181, 6);
+        @include display_f;
+        padding: 0 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        &-left{
+            display: flex;
+            align-items: center;
+            span{
+              
+                border-radius: 50%;
+                &:hover {
+                    background: rgb(235, 181, 6);
+                }
+            }
+            li{
+                margin: 10px;
+                font-size: 14px;
+              
+            }
+        }
+
+
+        &-right{
+            @include display_f;
+            li{
+                margin: 0 15px;
+            }
+            & li:nth-of-type(3){
+                width: 100px;
+                height: 50px;
+                line-height: 50px;
+                background: blue;
+                border-radius: 10px;
+                text-align: center;
+               a{
+                color: #fff;
+               }
+            }
+        }
+    }
+
+   }
+}

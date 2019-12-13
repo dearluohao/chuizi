@@ -1,0 +1,82 @@
+[
+  {
+    "type": "repository",
+    "url": "https://github.com/dearluohao/chuizi",
+    "owner": "https://github.com/dearluohao",
+    "name": "chuizi",
+    "description": "个人项目",
+    "website": null,
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "labels": [
+      {
+        "url": "https://github.com/dearluohao/chuizi/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "created_at": "2019-12-13T05:19:55Z"
+      },
+      {
+        "url": "https://github.com/dearluohao/chuizi/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "created_at": "2019-12-13T05:19:55Z"
+      },
+      {
+        "url": "https://github.com/dearluohao/chuizi/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "created_at": "2019-12-13T05:19:55Z"
+      },
+      {
+        "url": "https://github.com/dearluohao/chuizi/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "created_at": "2019-12-13T05:19:55Z"
+      },
+      {
+        "url": "https://github.com/dearluohao/chuizi/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "created_at": "2019-12-13T05:19:55Z"
+      },
+      {
+        "url": "https://github.com/dearluohao/chuizi/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "created_at": "2019-12-13T05:19:55Z"
+      },
+      {
+        "url": "https://github.com/dearluohao/chuizi/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "created_at": "2019-12-13T05:19:55Z"
+      },
+      {
+        "url": "https://github.com/dearluohao/chuizi/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "created_at": "2019-12-13T05:19:55Z"
+      },
+      {
+        "url": "https://github.com/dearluohao/chuizi/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "created_at": "2019-12-13T05:19:55Z"
+      }
+    ],
+    "collaborators": [
+
+    ],
+    "created_at": "2019-12-13T05:19:55Z",
+    "git_url": "tarball://root/repositories/dearluohao/chuizi.git",
+    "default_branch": "master",
+    "webhooks": [
+
+    ],
+    "public_keys": [
+
+    ]
+  }
+]

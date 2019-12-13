@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>商品列表</title>
+    <link rel="stylesheet" href="/css/category.css" />
+    <link rel="stylesheet" href="/css/modules/reset.css" />
+    <link rel="stylesheet" href="/libs/iconfont/iconfont.css" />
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header></header>
+
+    <!-- 主要内容 -->
+    <main>
+      <div class="main">
+        <div class="main-filtrate">
+          <ul>
+            <li><a href="#">综合排序</a></li>
+            <span>•</span>
+            <li><a href="#">价格排序</a></li>
+            <span>•</span>
+            <li><a href="#">价格低到高</a></li>
+            <span>•</span>
+            <li><a href="#">价格由高到低</a></li>
+          </ul>
+        </div>
+        <div class="main-content b">
+          
+            
+
+        </div>
+        <script type="text/html" id="a">
+          {{each list item}}
+          <div class="main-content-shop">
+               
+              <div class="main-content-shop-top">
+                  <a href="/html/detail.html?id={{item.id}}">
+                <img src="{{item.src}}" alt="" />
+              </div>
+              <div class="main-content-shop-buttom">
+                <h3>{{item.brand}}</h3>
+                <p>{{item.title}}</p>
+                <div>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <em>{{item.desc}}</em>
+              </a>
+              </div>
+             
+            </div>
+        {{/each}}
+        </script>
+      </div>
+    </main>
+
+    <!-- 尾部 -->
+    <footer></footer>
+    <script
+      src="/libs/require/require.min.js"
+      data-main="/js/category"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,322 @@
+@import './modules/reset';
+@import './modules/header';
+@import './modules/footer';
+
+
+// 主题内容
+.main {
+  min-width: 1220px;
+  main {
+    width: 100%;
+    background: #ededed;
+  
+    //  轮播图上下内容
+    .slideshow {
+      width: 1220px;
+      height: 766px;
+      
+
+      margin: 0 auto;
+      overflow: hidden;
+      &-top {
+        width: 1220px;
+        height: 490px;
+        
+        
+       
+        img{
+         
+          width: 1220px;
+          height: 490px;
+        }
+      }
+
+
+      &-bottom {
+        height: 198px;
+        background: purple;
+        margin-top: 26px;
+        margin-bottom: 26px;
+      }
+    }
+    // 热卖商品内容
+    .hotgoods {
+      width: 1220px;
+      height: 482px;
+      border-radius: 15px;
+      margin: 0 auto;
+      border: 2px solid #e3e3e3;
+      //标题部分
+      &-top {
+        background: #fafafa;
+        height: 58px;
+        padding-left: 22px;
+        padding-right: 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+        border-bottom: 2px solid #e3e3e3;
+        div {
+          width: 72px;
+          height: 24px;
+          display: flex;
+          justify-content: space-between;
+          span {
+            border: 1px solid #e8e8e8;
+            width: 24px;
+            height: 24px;
+            line-height: 20px;
+            border-radius: 12px;
+            text-align: center;
+            a {
+              color: #767676;
+            }
+          }
+        }
+      }
+      //热卖商品详情内容
+      &-bottom {
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        &-shop {
+          width: 304px;
+          height: 430px;
+          border-right: 1px solid #767676;
+          &-top {
+            padding: 43px 0 22px;
+            & img {
+              display: inline-block;
+              height: 216px;
+              width: 304px;
+              background: orchid;
+            }
+          }
+          &-buttom {
+            width: 304px;
+            height: 142px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            & h3 {
+              font-size: 18px;
+              font-weight: bold;
+            }
+            & p {
+              font-size: 12px;
+              font-weight: bold;
+            }
+            & div {
+              span {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                margin-right: 1px;
+                border-radius: 50%;
+                background-color: #222222;
+                border: 2px solid #b1b1b1;
+                &:hover {
+                  border: 2px solid black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // 商品详情列表
+    .shop-details {
+      width: 1220px;
+      height: 970px;
+      margin: 0 auto;
+
+      overflow: hidden;
+      //内容
+      &-content {
+        width: 1220px;
+        height: 902px;
+        border-radius: 15px;
+        margin: 0 auto;
+        border: 2px solid #e3e3e3;
+
+        margin: 26px 0 26px;
+        //标题
+        &-top {
+          height: 59px;
+          font-size: 16px;
+          line-height: 59px;
+          padding-left: 24px;
+          border-bottom: 2px solid #dcdcdc;
+        }
+        //下面内容
+        &-canter {
+          width: 1220px;
+          height: 430px;
+          border: 1px solid #e3e3e3;
+          display: flex;
+          justify-content: space-between;
+          //左边大图
+          &-left {
+            width: 615px;
+            background: palegreen;
+          }
+          //上中间
+          &-center {
+            width: 304px;
+            border-right: 1px solid #767676;
+            background: #fff;
+            //
+            &-shop {
+              width: 304px;
+              height: 430px;
+              border-right: 1px solid #767676;
+              //
+              &-top {
+                padding: 43px 0 22px;
+                & img {
+                  display: inline-block;
+                  height: 216px;
+                  width: 304px;
+                  background: pink;
+                }
+              }
+              &-buttom {
+                width: 304px;
+                height: 142px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                & h3 {
+                  font-size: 18px;
+                  font-weight: bold;
+                }
+                & p {
+                  font-size: 12px;
+                  font-weight: bold;
+                }
+                & div {
+                  span {
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    margin-right: 1px;
+                    border-radius: 50%;
+                    background-color: #222222;
+                    border: 2px solid #b1b1b1;
+                    &:hover {
+                      border: 2px solid black;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          //上右边
+          &-right {
+            width: 307px;
+            border-right: 1px solid #767676;
+            background: #fff;
+
+            &-shop {
+              width: 307px;
+              height: 430px;
+              border-right: 1px solid #767676;
+              &-top {
+                padding: 43px 0 22px;
+                & img {
+                  display: inline-block;
+                  height: 216px;
+                  width: 304px;
+                  background: pink;
+                }
+              }
+              &-buttom {
+                width: 304px;
+                height: 142px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                & h3 {
+                  font-size: 18px;
+                  font-weight: bold;
+                }
+                & p {
+                  font-size: 12px;
+                  font-weight: bold;
+                }
+                & div {
+                  span {
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    margin-right: 1px;
+                    border-radius: 50%;
+                    background-color: #222222;
+                    border: 2px solid #b1b1b1;
+                    &:hover {
+                      border: 2px solid black;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        &-bottom {
+          background: #fff;
+          display: flex;
+          justify-content: space-between;
+          &-shop {
+            width: 304px;
+            height: 430px;
+            border-right: 1px solid #767676;
+            &-top {
+              padding: 43px 0 22px;
+              & img {
+                display: inline-block;
+                height: 216px;
+                width: 304px;
+                background: orange;
+              }
+            }
+            &-buttom {
+              width: 304px;
+              height: 142px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              align-items: center;
+              & h3 {
+                font-size: 18px;
+                font-weight: bold;
+              }
+              & p {
+                font-size: 12px;
+                font-weight: bold;
+              }
+              & div {
+                span {
+                  display: inline-block;
+                  width: 8px;
+                  height: 8px;
+                  margin-right: 1px;
+                  border-radius: 50%;
+                  background-color: #222222;
+                  border: 2px solid #b1b1b1;
+                  &:hover {
+                    border: 2px solid black;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

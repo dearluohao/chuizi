@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>商品详情</title>
+    <link rel="stylesheet" href="/css/detail.css" />
+    <link rel="stylesheet" href="/css/modules/reset.css" />
+    <link rel="stylesheet" href="/libs/iconfont/iconfont.css" />
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header></header>
+    <!-- 主要内容 -->
+    <main>
+      <!-- 头部筛选参数 -->
+      <div class="content-filtrate">
+        <div class="content-filtrate-main">
+          <ul>
+            <li><a href="#">概览</a></li>
+            <li><a href="#">设计</a></li>
+            <li><a href="#">功能</a></li>
+            <li><a href="#">操作系统</a></li>
+            <li><a href="#">技术规格</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">优先购买权</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 主体详情内容 -->
+      <div class="content" id="getdetail-content">
+    </div>
+    <script type="text/html" id="detail-content">
+
+
+          <!-- 产品 -->
+          <div class="content-product">
+              <div class="content-product-left">
+                <div class="content-product-left-smallimg">
+                  <div class="content-product-left-smallimg-top">
+                    <span class="show"></span>
+                    <a href="#"><img src="{{img[0]}}" alt="" class="img-zoom"></a>
+                   
+                  </div>
+                  <div class="content-product-left-smallimg-bottom">
+                    <ul id="gall">
+                      {{each img src}}
+                      <li><a href="#" data-image="{{src}}"><img src="{{src}}" alt=""></a></li>
+                      {{/each}} 
+                    </ul>
+                  </div>
+                </div>
+                <!-- <div class="content-product-left-bigimg show">
+                  <img src="../images/www.smartisan.com_.png" alt="">
+                </div> -->
+              </div>
+              <div class="content-product-right">
+                <div class="content-product-right-top">
+                  <h3>{{title}}</h3>
+                  <p>{{jiesao}}</p>
+                </div>
+    
+                <div>
+                    <div>
+                  <span>选择颜色</span>
+                  <ul>
+                    {{each color coo}}
+                    <li><em>{{coo}}</em></li>
+                  {{/each}}
+                  </ul>
+                </div>
+                  <div>
+                        <span>容量选择</span>
+                        <ul>
+                            {{each niecun big}}
+                            <li>{{big}}</li>
+                          {{/each}}
+                          
+                        </ul>
+                    </div>
+    
+                </div>
+    
+                
+                <div>
+                  <span>网络选择</span>
+                  <ul>
+                    <li>全网通</li>
+                  </ul>
+                </div>
+                <div>
+                  <span>服务说明</span>
+                  <ul>
+                    <li>★满 99 元包邮</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+    
+    </script>
+    
+      
+        <!-- 产品规格 -->
+        <div class="content-specs" id="detail-images">
+           
+        </div>
+
+        <script type="text/html" id="detail-imgs">
+          <h2>技术规格</h2>
+          {{each detailimg img}}
+        
+          <img src="{{img}}" alt="">
+        {{/each}}
+        </script>
+
+
+
+      </div>
+    </main>
+    <!-- 加入购物车 -->
+    <div class="shop">
+      <div class="shop-center" id="detailShop">
+      
+      </div>
+
+
+      <script type="text/html" id="detail-shops">
+
+
+  <div class="shop-center-left">
+         <span>您已经选择了:</span>
+          <ul>
+            <li>
+              <span>{{title}}</span>
+              <em{{jiage}}</em><p>{{peizhixinxi}}</p>
+            </li>
+          </ul>
+        </div>
+        <div class="shop-center-right">
+          <p>${{jiage}}</p>
+          <p><a href="/html/shopping.html">立即购买</a></p>
+          <p><a href="#" id="gouwuche">加入购物车</a></p>
+        </div>
+
+</script>
+
+    </div>
+
+    <div class="shop_fly" id="shop_fly">
+      <p>数量</p>
+      <span id="shop_num">0</span>
+    </div>
+    <!-- 尾部 -->
+    <footer></footer>
+    <script src="/libs/require/require.min.js" data-main="/js/detail"></script>
+  </body>
+</html>
