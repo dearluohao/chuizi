@@ -11,6 +11,7 @@ require(['./config'], () => {
 
           this.addBtn()
           this.all_btn()
+
         }
         renderTable(){
           let cart = localStorage.getItem('cart')
@@ -245,8 +246,9 @@ _this.calMoney()
 
 
   calMoney(){
+    // console.log(this+"110")
+console.log(this.cart)
 const money =this.cart.reduce((itme,shop)=>{
-
 // console.log(itme = shop.jiage*shop.count)
   if(shop.check){
     itme += shop.jiage*shop.count-0
@@ -260,93 +262,22 @@ const money =this.cart.reduce((itme,shop)=>{
 
 
 
-  all_btn(){
-    const _this=this
-    // console.log( $('#all-check').check===false)
-     $('#all-check').on('click',function(){
-      let cart = JSON.parse(localStorage.getItem('cart'))
-
-// console.log(cart)
-//     const money =cart.reduce((itme,shop)=>{
-
-//       // console.log(itme = shop.jiage*shop.count)
-//          if(shop.check){
-//           itme += shop.jiage*shop.count-0
-//         }
-//         return itme
-      
-//        },0)
-//        console.log(money)
-//        console.log(997)
-//  $('.sumMoney').html(money.toFixed(2))
-
-
-//  localStorage.setItem('cart',JSON.stringify(_this.cart))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   if($(this).prop('checked')===true){
-
-    const money =this.cart.reduce((itme,shop)=>{
-
-      // console.log(itme = shop.jiage*shop.count)
-        if(shop.check){
-          itme += shop.jiage*shop.count-0
-        }
+      all_btn(){
+      const _this=this
+      $('#all-check').on('click',function(){
+        var check =$(this).prop('checked')
+        _this.cart=_this.cart.map(itme=>{
+          itme.check = check
         return itme
-      
-      },0)
-      console.log(money)
-      console.log(997)
-
-$('.sumMoney').html(money.toFixed(2))
- 
-   }else{
-     const money =this.cart.reduce((itme,shop)=>{
-
-      // console.log(itme = shop.jiage*shop.count)
-        if(shop.check){
-          itme += shop.jiage*shop.count-0
+        })
+        setTimeout(() => {
+        if($(this).prop('checked')===true){
+          _this.calMoney()
+        }else{
+          _this.calMoney()
         }
-        return itme
-      
-      },0)
-      console.log(money)
-      console.log(998)
-$('.sumMoney').html(money.toFixed(2))
-var mon =this.cart.reduce((itme,shop)=>{
-  if(shop.check){
-    itme +=shop.jiage*shop.count-0
-  }
-  return itme
-},0)
-    
-$('.sumMoney').html(mon.toFixed(2))
-    console.log(666)
-   }
-     
-    })
+        },20)
+      })
   }
 
 
